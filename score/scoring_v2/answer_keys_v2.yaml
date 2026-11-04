@@ -1,0 +1,152 @@
+# scoring_v2/answer_keys_v2.yaml
+#
+# Fortified CRT answer keys (JZ-RESCORE.md §2), derived from the observed
+# response distributions across 469 humans and 14,944 agent item-responses.
+#
+# Evaluation order is STRICT and enforced by score_v2.py:
+#     normalise -> correct -> intuitive -> explicit_other -> (LLM residual)
+# The first class whose pattern-list matches wins. `explicit_other` decides
+# known non-lure wrong answers deterministically so they never reach the LLM.
+#
+# Every pattern is applied with `re.search` against the §1-normalised
+# (lowercased, straight-apostrophe, whitespace-collapsed, $-stripped,
+# trailing-punctuation-stripped) answer string. Patterns are verbatim from
+# JZ-RESCORE.md §2 — do not "fix" them here; changes belong in CHANGELOG.md.
+#
+# Per item:
+#   item_stem       — verbatim from bcrt_validation/src/01_score.py ITEM_TEXT
+#   correct_plain   — plain-language correct answer (for the adjudicator prompt)
+#   intuitive_plain — plain-language intuitive lure (for the adjudicator prompt)
+#   correct / intuitive / explicit_other — ordered regex lists
+
+crt2:
+  crt2_q1:
+    item_stem: "If you pass the person in second place in a race, what place are you in?"
+    correct_plain: "second"
+    intuitive_plain: "first"
+    correct:
+      - '^2(nd)?( place)?$'
+      - '\bsecond\b'
+      - '\b2nd\b'
+    intuitive:
+      - '^1(st)?( place)?$'
+      - '\bfirst\b'
+      - '\b1st\b'
+    explicit_other:
+      - '^3(rd)?$'
+
+  crt2_q2:
+    item_stem: "A farmer had 15 sheep and all but 8 died. How many are left?"
+    correct_plain: "eight"
+    intuitive_plain: "seven"
+    correct:
+      - '\b8\b'
+      - '\beight\b'
+    intuitive:
+      - '^7$'
+      - '\bseven\b'
+    explicit_other: []
+
+  crt2_q3:
+    item_stem: "Emily's father has three daughters: April, May, and ?. What is the third daughter's name?"
+    correct_plain: "Emily"
+    intuitive_plain: "June"
+    correct:
+      - '\bemily\b'
+    intuitive:
+      - '\bjune\b'
+    explicit_other:
+      - '\bapril\b'
+      - '\bmay\b'
+
+  crt2_q4:
+    item_stem: "How many cubic feet of dirt are in a hole 3' x 3' x 3'?"
+    correct_plain: "zero (a hole contains no dirt)"
+    intuitive_plain: "twenty-seven"
+    correct:
+      - '^0(\.0+)?( cubic feet)?$'
+      - '\bzero\b'
+      - '^none\b'
+      - '\bno dirt\b'
+    intuitive:
+      - '^27(\.0+)?( cubic feet)?$'
+      - '\btwenty[-\s]?seven\b'
+    explicit_other: []
+
+bcrt:
+  bcrt_q1:
+    item_stem: "Cow trade: buy 800, sell 1000, buy 1100, sell 1300. Total profit?"
+    correct_plain: "400 (dollars)"
+    intuitive_plain: "300 (dollars)"
+    correct:
+      - '\b400\b'
+      - '\bfour hundred\b'
+    intuitive:
+      - '\b300\b'
+      - '\bthree hundred\b'
+    explicit_other:
+      - '\b100\b'
+      - '\b200\b'
+      - '\b500\b'
+      - '^0$'
+
+  bcrt_q2:
+    item_stem: "Snail climbs 3/day, slips 2/night on a 10-ft wall. Days to reach top?"
+    correct_plain: "eight days"
+    intuitive_plain: "ten days"
+    correct:
+      - '^8( days?)?$'
+      - '\beight\b.*\bdays?\b'
+      - '\b8\b.*\bdays?\b'
+    intuitive:
+      - '^10( days?)?$'
+      - '\bten\b.*\bdays?\b'
+    explicit_other:
+      - '^[579]( days?)?$'
+
+  bcrt_q3:
+    item_stem: "Rope ladder on a ship; tide rises. Time until three rungs are covered?"
+    correct_plain: "never — the ladder rises with the tide"
+    intuitive_plain: "4 hours (or 2 hours 40 minutes)"
+    correct:
+      - '\bnever\b'
+      - '\bno time\b'
+      - '\brises? with\b'
+      - '\b(moves|rises) with the (ship|boat|tide)\b'
+      - '^0( hours?)?$'
+      - '\bnot applicable\b'
+      - '^n/?a$'
+    intuitive:
+      - '^4( hours?|hrs?)?$'
+      - '\bfour\b.*\bhours?\b'
+      - '\b4 ?(hours?|hrs?)\b'
+      - '\b2 ?h(ours?)? ?40\b'
+      - '\b160 ?min(utes?)?\b'
+      - '\b2[.,]?6{1,2} ?hours?\b'
+    explicit_other:
+      - '^3( hours?|hrs?)?$'
+      - '^2( hours?)?$'
+      - '^35$'
+
+  bcrt_q4:
+    item_stem: "Jack looks at Anne; Anne at George. Jack is married; George is not. Is a married person looking at an unmarried person?"
+    correct_plain: "yes"
+    intuitive_plain: "cannot be determined"
+    correct:
+      - '^yes\b'
+      - '\byes\b'
+    intuitive:
+      - '\bcan''t\b'
+      - '\bcannot\b'
+      - '\bunsure\b'
+      - '\bnot sure\b'
+      - '\bunknown\b'
+      - '\bdon''t know\b'
+      - '\bdo not know\b'
+      - '\bno idea\b'
+      - '\bnot enough info'
+      - '\bunclear\b'
+      - '\bmaybe\b'
+      - '\bimpossible to (tell|know|determine)\b'
+    explicit_other:
+      - '^no\.?$'

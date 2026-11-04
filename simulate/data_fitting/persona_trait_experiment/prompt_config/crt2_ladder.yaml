@@ -1,0 +1,7 @@
+mode: 5
+levels:
+  0: "I almost always answer with my first intuitive response and rarely pause to verify it."
+  1: "I usually go with my first impression and only occasionally reconsider if something feels inconsistent or confusing."
+  2: "I sometimes notice a 'something is off' feeling and will do a quick sanity check before committing to an answer."
+  3: "I often slow down briefly to test my first answer (e.g., check assumptions, do a quick calculation, or consider an alternative interpretation)."
+  4: "I almost always run a short verification step before answering and frequently catch cases where my first intuition is wrong."

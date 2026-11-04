@@ -1,0 +1,115 @@
+{
+  "metrics": {
+    "trait_fidelity": {
+      "monotonicity_notes": "Higher target traits should correspond to higher simulated scale scores; see trait_fidelity correlations."
+    },
+    "behavioural_alignment": {
+      "trait_writing_correlations": {},
+      "trait_writing_regressions": {},
+      "by_condition": {},
+      "by_tag": {}
+    },
+    "response_consistency": {
+      "cronbach_alpha_bfi": {
+        "extraversion": -514.295340501792,
+        "agreeableness": -37.009021794221994,
+        "conscientiousness": -24.15608043408874,
+        "neuroticism": -68.39512383900929,
+        "openness": -19.1100431629066
+      },
+      "cronbach_alpha_nfc": -3.7116693292835534,
+      "notes": "Test\u2013retest reliability and order effects are not explicitly simulated here but could be assessed by repeating rollouts with the same personas under different shuffling settings."
+    }
+  },
+  "best_params": {
+    "likert_noise": 0.5,
+    "crt_slip": 0.2,
+    "random_seed": 42
+  },
+  "best_calibration_score": null,
+  "api_reliability": {
+    "total_api_calls": 1925,
+    "retried_calls": 0,
+    "hard_failures": 0,
+    "hard_failure_rate": 0.0,
+    "empty_or_unparseable_items": 0,
+    "truncated_responses": 0,
+    "hard_failure_rate_exceeds_1pct": false
+  },
+  "config": {
+    "personas_filename": "human_personas.csv",
+    "human_mode": true,
+    "personas_path": "cognition-suite-sim/data_fitting/persona_trait_experiment/human_personas.csv",
+    "markers_filename": "serapio_goldberg_markers.csv",
+    "admin_mode": "per_test",
+    "shuffle_items_within_tests": false,
+    "shuffle_test_order": false,
+    "randomize_reasoning_block": true,
+    "holdout_fraction": 0.0,
+    "max_personas": null,
+    "persona_ids": [],
+    "sample_n_requested": null,
+    "sample_n_selected": 471,
+    "persona_bank_size": 471,
+    "sampling_mode": "sequential",
+    "sampling_without_replacement": true,
+    "sampling_stratify_source": null,
+    "time_column": null,
+    "random_seed": 42,
+    "output_dir": "simulation_outputs/CR_BASELINE_HUMAN_NUMERIC_CS46_S42",
+    "resolved_output_dir": "cognition-suite-sim/simulation_outputs/CR_BASELINE_HUMAN_NUMERIC_CS46_S42",
+    "max_parallel_personas": 10,
+    "bfi_columns": {
+      "extraversion": "BFI_Extraversion",
+      "agreeableness": "BFI_Agreeableness",
+      "conscientiousness": "BFI_Conscientiousness",
+      "neuroticism": "BFI_Neuroticism",
+      "openness": "BFI_Openness"
+    },
+    "nfc_column": "NFC_Total",
+    "crt_column": "CRT2_Total_adj",
+    "crt_level_column": "crt2_level",
+    "crt_cutoffs_filename": "crt2_level_cutoffs.yaml",
+    "crt_cutoffs_path": "cognition-suite-sim/data_fitting/persona_trait_experiment/crt2_level_cutoffs.yaml",
+    "crt_binning_method": "fixed_human_crt2_cutoffs",
+    "crt_cutoffs_values": {
+      "q1_20": 1.83300181167123,
+      "q2_40": 2.33200724668493,
+      "q3_60": 2.66600362334247,
+      "q4_80": 3.33200724668493
+    },
+    "use_crt_numeric_only": false,
+    "use_openai": false,
+    "openai_model": "gpt-5",
+    "openai_max_output_tokens": 4000,
+    "openai_base_url": null,
+    "openai_key_env": "OPENAI_API_KEY",
+    "openai_api_style": "responses",
+    "openai_extra_params": {},
+    "openai_extra_body": {},
+    "max_api_retries": 5,
+    "use_anthropic": true,
+    "anthropic_model": "claude-sonnet-4-6",
+    "anthropic_max_output_tokens": 8000,
+    "temperature": null,
+    "anthropic_thinking": null,
+    "use_pseudo": false,
+    "persona_system_suffix": null,
+    "persona_prompt_style": "granular_serapio",
+    "persona_spec_mode": "numeric_only",
+    "persona_prompt_version": "winner_v2_numeric_only",
+    "task_prompt_version": "task_v1",
+    "bfi_ladder_granularity": 9,
+    "include_user_context": false,
+    "multi_turn_conversation": true,
+    "multi_turn_scope": "persona_session",
+    "tests_included": [
+      "writing",
+      "reasoning",
+      "nfc",
+      "bfi"
+    ],
+    "run_label": "CR_BASELINE_HUMAN_NUMERIC_CS46_S42",
+    "failed_persona_count": 0
+  }
+}

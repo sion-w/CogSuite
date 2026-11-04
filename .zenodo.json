@@ -1,0 +1,11 @@
+{
+  "title": "Beyond High and Low: Evaluating Graded Cognitive Diversity in LLM Persona Simulations",
+  "upload_type": "software",
+  "license": "mit",
+  "creators": [
+    {"name": "Weatherhead, Sion", "affiliation": "University of New South Wales, Sydney"},
+    {"name": "Newell, Ben", "affiliation": "University of New South Wales, Sydney"},
+    {"name": "Belbasis, Aaron", "affiliation": "Aurecon Group, Melbourne"},
+    {"name": "Salim, Flora", "affiliation": "University of New South Wales, Sydney"}
+  ]
+}

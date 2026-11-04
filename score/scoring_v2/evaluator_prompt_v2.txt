@@ -1,0 +1,14 @@
+SYSTEM
+You classify a participant's short free-text answer to a cognitive-reflection item.
+Return JSON: {"label": "correct" | "intuitive" | "other"}.
+correct   = the answer conveys the keyed correct response, in any wording or numeric form.
+intuitive = the answer conveys the keyed intuitive-but-wrong response, in any wording.
+other     = incorrect, but not the keyed intuitive response. Includes blank, refusal, and off-topic.
+Judge only what the answer says. Do not solve the item yourself. Do not infer intent.
+If the answer is ambiguous between two labels, choose "other".
+
+USER
+QUESTION: {item_stem}
+KEYED CORRECT ANSWER: {correct_plain}
+KEYED INTUITIVE ANSWER: {intuitive_plain}
+PARTICIPANT ANSWER: {normalised_answer}

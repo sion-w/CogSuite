@@ -1,0 +1,26 @@
+# Reference environment: the builds that made the paper's figures and tables (macOS, Apple silicon).
+# Tables rebuild byte-identical only with these conda-forge builds: pandas' CSV number parsing in the
+# PyPI wheel can differ in the last digit. `requirements.txt` (pip) is fine for running the code.
+# Create with:  conda env create -f environment.yml && conda activate cogsuite
+name: cogsuite
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11.9
+  - numpy=1.26.4
+  - pandas=2.1.0=py311h9e438b8_0
+  - scipy=1.15.2
+  - statsmodels=0.14.0
+  - bottleneck=1.5.0
+  - numexpr=2.10.2
+  - pillow=11.0.0
+  - pyyaml=6.0.2
+  - pip
+  - pip:
+      - matplotlib==3.10.0
+      - seaborn==0.13.2
+      - tqdm==4.67.1
+      - python-dotenv==1.1.0
+      - openai==1.109.1
+      - anthropic==0.120.0

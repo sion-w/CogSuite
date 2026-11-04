@@ -1,0 +1,15 @@
+method: human_fixed_quintiles
+source_dataset: "reports/synthetic/human_personas_v2_crt2complete.csv"
+source_column: CRT2_Total_adj
+n_source: 471
+cutoffs:
+  q1_20: 1.83300181167123
+  q2_40: 2.33200724668493
+  q3_60: 2.66600362334247
+  q4_80: 3.33200724668493
+level_mapping:
+  0: "level 0 if CRT2_Total_adj <= q1_20"
+  1: "level 1 if CRT2_Total_adj > q1_20 and <= q2_40"
+  2: "level 2 if CRT2_Total_adj > q2_40 and <= q3_60"
+  3: "level 3 if CRT2_Total_adj > q3_60 and <= q4_80"
+  4: "level 4 if CRT2_Total_adj > q4_80"

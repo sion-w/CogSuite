@@ -1,0 +1,44 @@
+test_id: BRT
+name: Behavioural Reflection Tasks
+type: brt
+instructions: >
+  Here you will be presented 2 hypothetical scenarios. You are to write down your response.
+
+items:
+  - item_id: brt_1
+    text: |
+      Please aim for at least 150 words, or 4+ sentences. There are no upper limits.
+      ---
+      One month ago, you and Friend A were supposed to find and book a restaurant for Friend B’s birthday. 
+
+      However, when you asked Friend A to help, they stopped responding to your texts. As a result, you found a restaurant on your own and paid a non-refundable deposit for the booking.
+
+      Now, three hours before the dinner, Friend A sends you a message with screenshots of Google Reviews for the restaurant you chose — claiming some diners got food poisoning — and says, “maybe we shouldn’t go…”
+
+      You remember the restaurant has great reviews from food critics. Dinner is tonight; most nearby venues are already full and you need to make a decision quickly.
+
+      Write your thoughts as if thinking aloud - from the moment you read Friend B’s message until you decide what to do (keep or change reservation). Include anything that crosses your mind - and consider:
+
+      A. Your immediate gut or emotional reaction
+      B. What (if anything) you’d say to Friend A right away
+      C. How you decide which information is trustworthy
+      D. Any extra checks or actions you’d take before choosing
+      E. Finish by stating your final choice (keep the booking or change plans) and why.
+
+  - item_id: brt_2
+    text: |
+      Aim for at least 150 words, or 4+ sentences. There are no upper limits.
+      ---
+      A doctor prescribed you "Medex" for recurring headaches - informing you that clinical trials indicate it works well and has minimal side effects, which are mild.
+       
+      That evening, while on social media, you come across a video by Dr George Miles, a practising GP with a large online following. Dr Miles warns that Medex poses serious long-term risk to liver health that patients are often not informed about. He shows images of medical journal articles supporting his claim.
+
+      The post is very popular and has mixed comments. Some thank Dr Miles for the warning; others say the data are being misrepresented.
+
+      Write your thoughts as if thinking aloud, from the moment you watch the video until you decide whether to start taking Medex. Include anything that occurs to you — but please consider:
+
+      A. Your immediate emotional or gut reaction
+      B. Anything you would say or message to your clinician, friends, or family
+      C. How you decide which information is trustworthy
+      D. Any checks or actions you would take before choosing
+      E. Finish by stating your final decision and why.

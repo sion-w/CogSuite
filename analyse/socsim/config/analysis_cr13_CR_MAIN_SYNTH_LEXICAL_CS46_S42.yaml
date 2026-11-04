@@ -1,0 +1,14 @@
+analysis_run_id: cr13_CR_MAIN_SYNTH_LEXICAL_CS46_S42
+datasets:
+  include: []
+  exclude:
+    - cogsim_agent
+paths:
+  inputs: data/inputs
+  intermediate: data/intermediate
+  exports: data/exports
+  reports: reports
+openai:
+  enabled: true
+logging:
+  level: INFO

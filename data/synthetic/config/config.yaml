@@ -1,0 +1,128 @@
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  external: data/external
+  exports: exports
+  reports_figs: reports/figures
+  reports_tabs: reports/tables
+input:
+  qualtrics_csv: understanding_styles_bcrt_fullexport.csv
+  liwc_csv: liwc_results.csv
+id_col: PROLIFIC_PID
+writing:
+  q1_col: WritingTask_Q1
+  q2_col: WritingTask_Q2
+crt_cols:
+  crt2:
+  - crt2_q1
+  - crt2_q2
+  - crt2_q3
+  - crt2_q4
+  bcrt:
+  - bcrt_q1
+  - bcrt_q2
+  - bcrt_q3
+  - bcrt_q4
+  dcrt:
+  - dcrt_q1
+  - dcrt_q2
+  - dcrt_q3
+  - dcrt_q4
+experience_cols:
+- Experience Check_1
+- Experience Check_2
+- Experience Check_3
+- Experience Check_4
+- Experience Check_5
+- Experience Check_6
+- Experience Check_7
+- Experience Check_8
+bfi:
+  item_cols:
+  - Q125_1
+  - Q125_2
+  - Q125_3
+  - Q125_4
+  - Q125_5
+  - Q125_6
+  - Q125_7
+  - Q125_8
+  - Q125_9
+  - Q125_10
+  attention_check_col: Q125_11
+  reverse_items:
+  - 1
+  - 3
+  - 4
+  - 5
+  - 7
+  keys:
+    Extraversion:
+    - 1
+    - 6
+    Agreeableness:
+    - 2
+    - 7
+    Conscientiousness:
+    - 3
+    - 8
+    Neuroticism:
+    - 4
+    - 9
+    Openness:
+    - 5
+    - 10
+nfc:
+  item_prefix: nfc_
+  n_items: 18
+  reverse_items:
+  - 3
+  - 4
+  - 5
+  - 7
+  - 8
+  - 9
+  - 12
+  - 16
+  - 17
+liwc:
+  families:
+    SUMMARY:
+    - Analytic
+    - Clout
+    - Authentic
+    - Tone
+    QTY:
+    - WC
+    - WPS
+    - Quant
+    - Number
+    FUNC:
+    - article
+    - prep
+    - i
+    - ipron
+    - auxverb
+    - conj
+    - adj
+    COG:
+    - insight
+    - cause
+    - discrep
+    - tentat
+    - differ
+    - certitude
+    AFFECT:
+    - emo_neg
+    TIME:
+    - focuspresent
+    MOT:
+    - risk
+    MOS:
+    - moral
+  a_priori_vars:
+  - insight
+  - emo_neg
+  - moral
+  - risk

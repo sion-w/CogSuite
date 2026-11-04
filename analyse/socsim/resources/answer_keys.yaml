@@ -1,0 +1,81 @@
+# config/answer_keys.yaml
+crt2:
+  crt2_q1:
+    correct:
+      - '^\s*2(nd)?\s*$'
+      - '\bsecond\b'
+    intuitive:
+      - '^\s*1(st)?\s*$'
+      - '\bfirst\b'
+  crt2_q2:
+    correct:
+      - '^\s*8(\.0+)?\s*$'
+      - '\beight\b'
+    intuitive:
+      - '^\s*7(\.0+)?\s*$'
+      - '\bseven\b'
+  crt2_q3:
+    correct:
+      - '^\s*emily[\.\!\s]*$'
+      - '^\s*the\s*third\s*.*\b(emily)\b.*$'
+    intuitive:
+      - '^\s*june[\.\!\s]*$'
+      - '\bjune\b'
+  crt2_q4:
+    correct:
+      - '^\s*0+(\.0+)?\s*$'
+      - '^\s*none\s*$'
+      - '^\s*no(ne)?\s*(dirt)?\s*$'
+      - '\bno\s+dirt\b'
+      - '\bzero\b'
+    intuitive:
+      - '^\s*27(\.0+)?\s*$'
+      - '\btwenty[-\s]?seven\b'
+
+bcrt:
+  bcrt_q1:
+    correct:
+      - '^\s*\$?\s*400(\.0+)?\s*$'
+      - '\bfour\s+hundred\b'
+      - '\$?\s*400\b'
+    intuitive:
+      - '^\s*\$?\s*300(\.0+)?\s*$'
+      - '\bthree\s+hundred\b'
+  bcrt_q2:
+    correct:
+      - '^\s*8(\.0+)?\s*(days?)?\s*$'
+      - '\beight\b.*\bdays?\b'
+      - '\b8\b.*\bdays?\b'
+    intuitive:
+      - '^\s*10(\.0+)?\s*(days?)?\s*$'
+      - '\bten\b.*\bdays?\b'
+  bcrt_q3:
+    correct:
+      - '\brises?\s+with\s+(the\s+)?(ship|boat|tide)\b'
+      - '\bit\s+(moves|rises)\s+with\s+(the\s+)?(ship|boat|tide)\b'
+      - '\bno\s+time\b'
+      - '\bnever\b'
+      - '\bnot\s+applicable\b'
+    intuitive:
+      - '^\s*4(\.0+)?\s*(hours?|hrs?)?\s*$'
+      - '\bfour\b.*\bhours?\b'
+      - '\b2\s*h(ours?)?\s*40\b'
+      - '\b2\s*hours?\s*40\s*(min|minutes?)\b'
+      - '\b160\s*min(utes?)?\b'
+      - '\b2(\.|,)?6{1,2}\s*hours?\b'
+      - '\b2\s*hours?\s*40\s*mins?\b'
+  bcrt_q4:
+    correct:
+      - '^\s*yes[\.\!\s]*$'
+      - '\byes\b'
+    intuitive:
+      - '^\s*can(''|no)t\s*(be\s*)?determined\s*$'
+      - '\b(can(''|no)t|unsure|unknown)\b'
+      - '\bnot\s+enough\s+information\b'
+      - '^\s*not\s+enough\s+information\s*$'
+
+dcrt:
+  dcrt_q1: { correct: ['.*'], intuitive: [] }
+  dcrt_q2: { correct: ['.*'], intuitive: [] }
+  dcrt_q3: { correct: ['.*'], intuitive: [] }
+  dcrt_q4: { correct: ['.*'], intuitive: [] }
