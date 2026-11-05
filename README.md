@@ -1,6 +1,6 @@
 # CogSuite
 
-Code for the paper *Beyond High and Low: Evaluating Graded Cognitive Diversity in LLM Persona Simulations* (NeurIPS 2026, Evaluations & Datasets track).
+Code for the paper *Imperfectly Imperfect: Evaluating Graded Cognitive Diversity in LLM Persona Simulations* (NeurIPS 2026, Evaluations & Datasets track).
 
 Data release (OSF): https://osf.io/h8d5s/ · Archived release (Zenodo): https://doi.org/10.5281/zenodo.23910425 · Code licence: MIT (`LICENSE`) · Data licence: CC BY 4.0
 

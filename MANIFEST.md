@@ -7,9 +7,9 @@ Every file in this repository, the release commitment it serves, where it came f
 | File | Commitment | Source | SHA-256 | Change |
 |---|---|---|---|---|
 | `.gitignore` | - | written for this release | `c8ae08d3071c5740602389d6bfa2003be671b40ea684fbd91a7c8c5cfc47e4a0` | new file |
-| `.zenodo.json` | - | written for this release (archive metadata for Zenodo) | `5dbd721be3db8501cdf3606ba353381398017a576cb54130c4fdd2ba923c2cdb` | new file |
+| `.zenodo.json` | - | written for this release (archive metadata for Zenodo) | `e28a9c2710b112e30d645070c05e25996087ba96662c2309df33799c507f1aa9` | new file |
 | `LICENSE` | - | written for this release | `e0661320fff74dcdf22b28f5fc0249082db6a9d6ba355cda34f806452903271c` | new file |
-| `README.md` | - | written for this release | `00f1cf93b2e1b67c98e3f34c905599867f4cf5e13dbf4175f9a8711a5fa65308` | new file |
+| `README.md` | - | written for this release | `cb2660e9a249cb3690c2a04462bf0296bf9f5ca9a982ee0ebee7fe418eaf022a` | new file |
 | `analyse/scripts/build_neurips_camera_ready_assets.py` | (3) | soc-sim:scripts/build_neurips_camera_ready_assets.py (release-mode commit) | `ab07acde35c6a77a6c515003e81be013a18eb278d9c529221c569135f5520a2b` | unchanged |
 | `analyse/scripts/cr27_trait_structure_transfer.py` | (3) | soc-sim:scripts/cr27_trait_structure_transfer.py (release-mode commit) | `3f620e957f4b3b226aba4e710aa92a5abff0c23ebf9fc620dc7ef88a04f11c9d` | unchanged |
 | `analyse/scripts/cr28_ladder_intervals.py` | (3) | soc-sim:scripts/cr28_ladder_intervals.py (release-mode commit) | `51cf8fc7691b6676c784a65dc6cd12c5fdc4bf7e7c6e22eccc0ee061ceba313d` | unchanged |
