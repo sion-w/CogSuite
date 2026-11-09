@@ -1,0 +1,15 @@
+method: human_fixed_quintiles
+source_dataset: "companion-study human sample (n = 467), as used for the first release of the profile bank"
+source_column: CRT2_Total_adj
+n_source: 467
+cutoffs:
+  q1_20: 1.46619580726608
+  q2_40: 2
+  q3_60: 2.59964685544956
+  q4_80: 2.86654895181652
+level_mapping:
+  0: "level 0 if CRT2_Total_adj <= q1_20"
+  1: "level 1 if CRT2_Total_adj > q1_20 and <= q2_40"
+  2: "level 2 if CRT2_Total_adj > q2_40 and <= q3_60"
+  3: "level 3 if CRT2_Total_adj > q3_60 and <= q4_80"
+  4: "level 4 if CRT2_Total_adj > q4_80"

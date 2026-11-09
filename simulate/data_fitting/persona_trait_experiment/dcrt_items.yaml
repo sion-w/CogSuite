@@ -1,0 +1,16 @@
+id: dcrt
+name: Distractor Cognitive Reflection Test (dCRT)
+type: reasoning
+
+items:
+  - id: dcrt_q1
+    question: "If a train leaves Melbourne at 3 PM and travels at 100 km/h, how long does it take to reach Sydney 800 km away?"
+
+  - id: dcrt_q2
+    question: "A fleet of trucks is carrying 1200 boxes. Each truck can carry 300 boxes. How many trucks are needed to carry all the boxes?"
+
+  - id: dcrt_q3
+    question: "John, Lisa, and Mark go on a camping trip. Each person brings one item: a tent, a bag of marshmallows, and a flashlight. John brought the flashlight, and Lisa didn't bring any food. What did Mark bring?"
+
+  - id: dcrt_q4
+    question: "A warehouse had 400 boxes of toys. At the first delivery, 50 boxes were shipped out. At the second delivery, another 150 boxes were shipped out. How many boxes are left?"

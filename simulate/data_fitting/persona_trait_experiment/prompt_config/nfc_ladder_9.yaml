@@ -1,0 +1,11 @@
+mode: 9
+levels:
+  1: "I strongly prefer easy tasks, avoid effortful thinking, and usually go with the obvious answer."
+  2: "I very much prefer simple tasks and rarely spend time analysing alternatives."
+  3: "I generally prefer simpler options and only think hard when necessary."
+  4: "I slightly prefer quick, low-effort choices over deep analysis."
+  5: "I sometimes enjoy thinking things through and sometimes prefer quick, simple choices."
+  6: "I slightly enjoy analysing options and do not mind effortful thinking."
+  7: "I generally enjoy complex problems and weighing alternatives."
+  8: "I very much enjoy effortful thinking, analysis, and challenging problems."
+  9: "I strongly enjoy grappling with complex ideas and seeking cognitively demanding solutions."

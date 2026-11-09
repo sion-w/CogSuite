@@ -1,0 +1,17 @@
+# Python 3.11. These are the versions that built the paper's figures and tables;
+# matplotlib is pinned because figures are compared render-for-render.
+numpy==1.26.4
+pandas==2.1.0
+scipy==1.15.2
+# pandas uses these for sums and means when present; pinned so tables match to the last digit.
+bottleneck==1.5.0
+numexpr==2.10.2
+statsmodels==0.14.0
+matplotlib==3.10.0
+seaborn==0.13.2
+pillow==11.0.0
+PyYAML==6.0.2
+tqdm==4.67.1
+python-dotenv==1.1.0
+openai==1.109.1
+anthropic==0.120.0

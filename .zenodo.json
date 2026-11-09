@@ -1,0 +1,31 @@
+{
+  "title": "Imperfectly Imperfect: Evaluating Graded Cognitive Diversity in LLM Persona Simulations",
+  "upload_type": "software",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Weatherhead, Sion",
+      "affiliation": "University of New South Wales, Sydney"
+    },
+    {
+      "name": "Newell, Ben",
+      "affiliation": "University of New South Wales, Sydney"
+    },
+    {
+      "name": "Belbasis, Aaron",
+      "affiliation": "Aurecon Group, Melbourne"
+    },
+    {
+      "name": "Salim, Flora",
+      "affiliation": "University of New South Wales, Sydney"
+    }
+  ],
+  "description": "Code for the paper \"Imperfectly Imperfect: Evaluating Graded Cognitive Diversity in LLM Persona Simulations\" (NeurIPS 2026, Evaluations & Datasets track): the persona simulator, CRT scoring, BRT coding, the per-run and cross-run analyses, and the scripts that build the paper's figures and tables. Data release: https://osf.io/h8d5s/.",
+  "related_identifiers": [
+    {
+      "identifier": "https://osf.io/h8d5s/",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset"
+    }
+  ]
+}

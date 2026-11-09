@@ -1,0 +1,12 @@
+# Keys and local environments: never commit
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+# Downloaded data and generated outputs
+simulate/simulation_outputs/
+simulate/data_fitting/persona_trait_experiment/human_personas.csv
+data/release/

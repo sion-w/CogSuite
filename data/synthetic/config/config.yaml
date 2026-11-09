@@ -1,0 +1,3 @@
+# Settings for the synthetic profile generator (05_synth_personas.py).
+paths:
+  reports_tabs: reports/tables   # default output folder, relative to data/synthetic/

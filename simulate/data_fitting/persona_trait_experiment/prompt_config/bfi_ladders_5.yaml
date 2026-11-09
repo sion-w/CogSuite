@@ -1,0 +1,32 @@
+mode: 5
+traits:
+  Extraversion:
+    1: "I am very quiet, reserved, and withdrawn."
+    2: "I am somewhat quiet and tend to keep to myself."
+    3: "I'm neither especially reserved nor especially outgoing."
+    4: "I am fairly outgoing, sociable, and energetic."
+    5: "I am very talkative, enthusiastic, and highly sociable."
+  Agreeableness:
+    1: "I am very critical, blunt, and hard to get along with."
+    2: "I am somewhat skeptical and can be stubborn or argumentative."
+    3: "I'm neither especially critical nor especially cooperative."
+    4: "I am fairly considerate, trusting, and cooperative."
+    5: "I am very warm, compassionate, and strongly accommodating."
+  Conscientiousness:
+    1: "I am very careless, disorganised, and unreliable about obligations."
+    2: "I am somewhat casual about plans and can be a bit disorganised."
+    3: "I'm neither especially disorganised nor especially organised."
+    4: "I am fairly organised, thorough, and reliable."
+    5: "I am very meticulous, disciplined, and highly dependable."
+  Neuroticism:
+    1: "I am very calm, relaxed, and emotionally stable."
+    2: "I am generally calm but occasionally worry or feel tense."
+    3: "I'm neither especially calm nor especially anxious."
+    4: "I am fairly anxious, tense, and easily upset."
+    5: "I am very high-strung, emotionally reactive, and prone to distress."
+  Openness:
+    1: "I am very down-to-earth, conventional, and prefer familiar routines."
+    2: "I am somewhat traditional and cautious with new ideas."
+    3: "I'm neither especially conventional nor especially curious."
+    4: "I am fairly imaginative, curious, and open to new experiences."
+    5: "I am very curious, creative, and strongly drawn to novel ideas."
